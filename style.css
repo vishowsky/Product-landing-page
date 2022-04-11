@@ -1,0 +1,23 @@
+header{
+    background-color: black;
+}
+#header-img{
+
+    height: 65px;
+    width: 100px;
+
+}
+
+.nav-link{
+    color: white;
+    text-decoration: dashed; 
+    font-size: large;
+    margin-left: 40px;
+}
+
+#nav-bar{
+    text-size-adjust: 10% ;
+    float: right;
+    margin-top: 23px;
+    inline-size: 50%;
+}
