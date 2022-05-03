@@ -1,40 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <title>Document</title>
 </head>
-
 <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <header id="header">
-        <img src="http://qnimate.com/wp-content/uploads/2014/03/images2.jpg" id="header-img" alt="">
-        <nav id="nav-bar">
-            <a class="nav-link" href="#video">Features</a>
-            <a class="nav-link" href="#email">How it works </a>
-            <a class="nav-link" href="#submit">Pricing</a>
+
+    <header id="header">  
+        <div>
+            <img id="header-img" src="https://images.vexels.com/media/users/3/134595/isolated/lists/525928028c88f02fb50261dd70ceb749-feliz-emoticon-emoji.png" alt="logo">
+            <h3>Ndovia</h3>
+        </div>
+            <nav id="nav-bar" class="menu">
+            <ul>
+                <li> <a class="nav-link" href="#Features"> Caracteristicas</a></li>
+                <li> <a class="nav-link" href="#howWork">Como funciona</a>  </li>
+                <li> <a class="nav-link" href="#Pricing"> Precio </a></li>
+            </ul>
         </nav>
+
     </header>
-
-    <div id="div-form">
-        <form id="form" action="https://www.freecodecamp.org/email-submit">
-            <label id="textoArribaEmail">Texto generico</label>
-            <br>
-            <input placeholder="Ingrese su email aca" type="email" name="email" id="email" required>
-            <br>
-            <input type="submit" class="btn" value="Get starter" id="submit">
-        </form>
-
-    </div>
-    <iframe id="video" height="315" height="315" allowfullscreen src="https://www.youtube.com/watch?v=26hdvzCjZfk"></iframe>
-    <div>
-
-    </div>
+    
     <main>
+        <section id="section-email">
+            <h1>Bienvenido a Ndovia grafic cards</h1>
+            <form id="form" action="https://www.freecodecamp.org/email-submit">
+                <input id="email" name="email" placeholder="Ingrese su email" type="email">
+                <br>
+                <input id="submit" name="submit" type="submit" value="Enviar">
+            </form>
+        </section>
+        
+        <section id="Features">
+            <h3>Especificaciones</h3>
+            <ul>
+                <li>Memoria: 24GB GDDR6X</li>
+                <li>Motor Gráfico: GA102 Nvidia Ampere. </li>
+                <li>Bus: PCI Express 4.0.</li>
+                <li>Interfaz de memoria: 384-Bit.</li>
+                <li>Frecuencias base: 1400 MHz.</li>
+                <li>Frecuencia Boost: 1785 MHz.</li>
+                <li> Velocidad de la memoria: 19.5Gbps.</li>
+                <li>Pantallas totales: 4</li>
+            </ul>
+        </section>        
+            
+        <section id="howWork">
+            <h3>Como Funciona</h3>
+            <iframe width="700" height="400" id="video" src="https://www.youtube.com/embed/cBVvMy-t0MQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        </section>
 
-    </main>
+        <section id="Pricing">
+            <h3>Precios</h3>
+            <div id="div-flex">
+                <div id="p1"> 
+                    
+                        <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3070/geforce-rtx-3070-shop-630-d@2x.png" alt="">
+                        <h1>RTX 3070</h1>
+                        <P>$950</P>
+                       
+                </div>
+                <div id="p2"> 
+                    <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3080/geforce-rtx-3080-shop-600-p@2x.png">
+                    <h1>RTX 3070</h1>
+                        <P>$1950</P>
+                </div>
+                <div id="p3">
+                    <img src="https://www.notebookcheck.org/fileadmin/Notebooks/News/_nc3/rtx_3090_super_ga102.png" alt="">
+                    <h1>RTX 3070</h1>
+                    <P>$3950</P>
+                </div>
+            </div>
+        </section>
+    
+</main>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </body>
-
-</html>
+</html>          
